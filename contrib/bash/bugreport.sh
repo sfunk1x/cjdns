@@ -29,6 +29,10 @@ $NODECMD $CJDHOME/contrib/nodejs/tools/dumptable.js >> $REPORT
 echo -e "\n\npeerstats\n===\n" >> $REPORT
 $NODECMD $CJDHOME/contrib/nodejs/tools/peerStats.js >> $REPORT
 
+# dump pathfinderTree
+echo e "\n\npathfinderTree\n===\n" >> $REPORT
+$NODECMD $CJDHOME/contrib/nodejs/tools/pathfinderTree.js >> $REPORT
+
 # dump trashroutes
 echo -e "\n\ntrashroutes\n===\n" >> $REPORT
 $CJDHOME/contrib/python/trashroutes >> $REPORT
