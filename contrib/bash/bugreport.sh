@@ -19,7 +19,7 @@ git rev-parse HEAD >> $REPORT
 
 # get ip address
 echo -e "\n\nip address\n===\n" >> $REPORT
-ifconfig | grep fc >> $REPORT
+ifconfig | grep fc | tr -s [:space:] >> $REPORT
 
 # dump routing table
 echo -e "\n\nrouting table\n===\n" >> $REPORT
